@@ -1,0 +1,10 @@
+<MyRootLayout>:
+    orientation: 'vertical'
+    on_touch_down: self.ids.widget1.update_plot()
+    TwoPlotsWidget:
+        id: widget1
+        units : ['°C','%rH']
+        titles : ['Temperatur','Luftfeuchtigkeit']
+        ax_colors : ['r','b'] 
+
+<TwoPlotsWidget>:
