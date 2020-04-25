@@ -8,9 +8,9 @@ The plots can be modified just like every other Matplotlib plot can. The backgro
 For mor info see my blog article about this widget: http://kraisnet.de/index.php/gebaeudedaten-erfassen-und-mit-kivy-visualisieren-2/23-matplotlib-widget-in-kivy-mit-zwei-plots-erstellen
 
 ## Dependencies
-kivy.deps.sdl2==0.1.18
-matplotlib==3.0.2
-kivy==1.11.1
+*kivy.deps.sdl2==0.1.18
+*matplotlib==3.0.2
+*kivy==1.11.1
 
 Please note that parts of the dependencies might be published under separate licences. Please credit them appropriately and distribute their licences if you are distributing packages including these dependencies
 
