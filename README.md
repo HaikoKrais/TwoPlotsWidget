@@ -1,7 +1,7 @@
 # TwoPlotsWidget
 Simple Kivy Widget showing two Matplotlib datetime plots with a shared x-axis
 
-![Screenshot](/images/logo.png)
+![Screenshot](https://github.com/HaikoKrais/TwoPlotsWidget/blob/master/screenshot.png)
 Format: ![Alt Text](url)
 
 The simple App uses the Kivy GUI and the Matplotlib Backend to visualize two Plots wrapped as a reusable Kivy Widget.
