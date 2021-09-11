@@ -68,12 +68,13 @@ class TwoPlotsSharedXWidget(FigureCanvasKivyAgg):
 
         #Add the data to the axes and modify their axis
         for n in range(len(axes)):
-            axes[n].plot_date(self.sourceX, self.sourceY[n], self.ax_colors[n], xdate=True)             
-            axes[n].set_ylabel(self.units[n])
-            axes[n].set_title(self.titles[n])
-            plt.ylim(min(self.sourceY[n])-2,max(self.sourceY[n])+2)
-            axes[n].xaxis.set_major_locator(dt.MonthLocator(bymonth=range(1,13))) #show major ticks with a step width of 1 month
-            axes[n].xaxis.set_major_formatter(dt.DateFormatter(self.formatter))
+            if self.sourceY[n]:
+                axes[n].plot_date(self.sourceX, self.sourceY[n], self.ax_colors[n], xdate=True)
+                axes[n].set_ylabel(self.units[n])
+                axes[n].set_title(self.titles[n])
+                plt.ylim(min(self.sourceY[n])-2,max(self.sourceY[n])+2)
+                axes[n].xaxis.set_major_locator(dt.MonthLocator(bymonth=range(1,13))) #show major ticks with a step width of 1 month
+                axes[n].xaxis.set_major_formatter(dt.DateFormatter(self.formatter))
 
         #the axis labels for the first subplot are made invisible
         plt.setp(axes[0].get_xticklabels(which='both'), visible=False)
