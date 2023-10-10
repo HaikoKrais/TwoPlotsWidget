@@ -73,7 +73,7 @@ class TwoPlotsSharedXWidget(FigureCanvasKivyAgg):
                 axes[n].set_ylabel(self.units[n])
                 axes[n].set_title(self.titles[n])
                 plt.ylim(min(self.sourceY[n])-2,max(self.sourceY[n])+2)
-                axes[n].xaxis.set_major_locator(dt.MonthLocator(bymonth=range(1,13))) #show major ticks with a step width of 1 month
+                axes[n].xaxis.set_major_locator(dt.MonthLocator(bymonth=range(1,13,6))) #show major ticks with a step width of 1 month
                 axes[n].xaxis.set_major_formatter(dt.DateFormatter(self.formatter))
 
         #the axis labels for the first subplot are made invisible
